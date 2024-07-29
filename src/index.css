@@ -1,0 +1,107 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 123, 255, 0.5); /* Semi-transparent blue */
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background 0.3s, padding 0.3s;
+}
+
+header.scrolled {
+  background: #2c3e50; /* Solid background when scrolled */
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 5px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 3px;
+  background: #34495e;
+  color: white;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #1abc9c;
+}
+
+.hero-section {
+  background: url('testing.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px; /* To offset the fixed header height */
+}
+
+.services {
+  padding: 50px 20px;
+  background: #ecf0f1;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
